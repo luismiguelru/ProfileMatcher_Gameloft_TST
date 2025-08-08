@@ -8,9 +8,21 @@ Microservice built with FastAPI + SQLAlchemy that matches player profiles with c
 
 ## ⚙️ Installation
 ```bash
+1. Clone the repository
+
+git clone https://github.com/luismiguelru/ProfileMatcher_Gameloft_TST.git
+cd ProfileMatcher_Gameloft_TST
+
+2. Create a virtual environment
+
 python -m venv .venv
-. .venv/Scripts/activate   #  Windows
+
+3. Activate the virtual environment
+
+.venv/Scripts/activate   #  Windows
 source .venv/bin/activate  #  macOS / Linux
+
+4. Install dependencies
 
 pip install -r requirements.txt
 ```
@@ -75,12 +87,12 @@ pytest tests/test_main.py::test_get_client_config_updates_and_returns -v
 ## Project Structure
 ````
 app/
- ├── api/             # Rutas (endpoints)
- ├── core/            # Configuración DB y funciones core
- ├── domain/          # Modelos y lógica de dominio
- ├── services/        # Lógica de negocio
- ├── main.py          # Punto de entrada FastAPI
+ ├── api/             # Routes (endpoints)
+ ├── core/            #  DB config and core functions
+ ├── domain/          # Models and domain logic
+ ├── services/        # Business logic
+ ├── main.py          # FastAPI entry endpoint
 tests/
- └── test_main.py     # Tests unitarios e integrados
+ └── test_main.py     
 ````
 
